@@ -1,4 +1,3 @@
-//add modern art code here
 PImage Field;
 PImage BBall;
 PImage Run;
