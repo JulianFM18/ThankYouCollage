@@ -21,12 +21,12 @@ float sss=20;
 void setup() {
   size(1900,1900);
   Field=loadImage("baseball-field.gif");
-  BBall=loadImage("baseball.png");
-  Run=loadImage("runner.png");
-  bat=loadImage("batter.png");
-   image(Field,100,100,1700,1700);
+  image(Field,100,100,1700,1700); 
+ BBall=loadImage("baseball.png");
   image(BBall,x,y,big,big);
-  image(Run,X,Y,large,large);
+  Run=loadImage("runner.png");
+  image(BBall,x,y,big,big);
+  bat=loadImage("batter.png");
   image(bat,880,1650,small,small);
  smooth(2); 
   
