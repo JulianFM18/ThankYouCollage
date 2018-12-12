@@ -33,38 +33,13 @@ void draw() {
   image(BBall,x,y,big,big);
   image(Run,X,Y,large,large);
   image(bat,880,1650,small,small);
-  big=big+bal;
-  X=X+SD;
-  Y=Y+MN;
-  if(mousePressed);
-  {y=y+speed;
-  x=x+nas;}
-  textAlign(CENTER);
-  textSize(text);
-  text=text+size;
-  strokeWeight(1000);
-  stroke(0,0,255);
-  fill(100,100,255);
-  if(text>1000)
-  {fill(0,0,0,0);}
-  if(y<70)
-  {text("HOME RUN!!!",950,600);
-  size=10;}
-  if(y>1800)
-  {text("HOME RUN!!!",950,600);
-  size=10;}
-  if(y<100)
-  {text("HOME RUN!!!",950,600);
-  size=10;}
-  if(big>125)
-  {bal=-2;}
-  if(X>1225)
-  {SD=-7;}
-  if(Y<850)
-  {MN=8;}
-  if(X<565)
-  {SD=7;}
-  if(Y>1700)
-  {large=0;} 
 }
-
+void mousePressed() {
+  speed=-27;
+  nas=random(-20,20);
+  bal=2;
+  SD=7;
+  MN=-8;
+  large=125;
+  small=0;
+}
