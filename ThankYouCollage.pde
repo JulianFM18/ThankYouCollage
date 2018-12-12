@@ -21,15 +21,10 @@ float sss=20;
 void setup() {
   size(1900,1900);
   Field=loadImage("baseball-field.gif");
-  image(Field,100,100,1700,1700); 
- BBall=loadImage("baseball.png");
-  image(BBall,x,y,big,big);
+  BBall=loadImage("baseball.png");
   Run=loadImage("runner.png");
-  image(BBall,x,y,big,big);
   bat=loadImage("batter.png");
-  image(bat,880,1650,small,small);
- smooth(2); 
-  
+  smooth(2); 
 }
 
 void draw() {
@@ -41,7 +36,6 @@ void draw() {
   big=big+bal;
   X=X+SD;
   Y=Y+MN;
-  
   if(mousePressed);
   {y=y+speed;
   x=x+nas;}
@@ -73,21 +67,4 @@ void draw() {
   if(Y>1700)
   {large=0;} 
 }
-
-void mousePressed() {
-  speed=-27;
-  nas=random(-20,20);
-  bal=2;
-  SD=7;
-  MN=-8;
-  large=125;
-  small=0;
-}
-
-
-
-
-
-
-
 
