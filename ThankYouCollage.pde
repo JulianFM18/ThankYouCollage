@@ -24,7 +24,12 @@ void setup() {
   BBall=loadImage("baseball.png");
   Run=loadImage("runner.png");
   bat=loadImage("batter.png");
-  smooth(2); 
+   image(Field,100,100,1700,1700);
+  image(BBall,x,y,big,big);
+  image(Run,X,Y,large,large);
+  image(bat,880,1650,small,small);
+ smooth(2); 
+  
 }
 
 void draw() {
@@ -36,6 +41,7 @@ void draw() {
   big=big+bal;
   X=X+SD;
   Y=Y+MN;
+  
   if(mousePressed);
   {y=y+speed;
   x=x+nas;}
